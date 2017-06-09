@@ -1,0 +1,178 @@
+/*				可复用				*/
+.clearFix:after {
+	content:"";
+	display: block;
+	clear: both;
+}
+body{
+	width: 100%;
+	background: #fff url(../img/center.png) no-repeat center top;
+}
+.bgimg {
+	width: 990px;
+	height: 358px;
+	background: url(../img/img.jpg)  no-repeat center top;
+	margin: -24px 0 -192px 15px;
+}
+header {
+	width: 960px;
+	margin: 0 auto;
+}
+header .top {
+	 width: 970px;
+	 margin: 0 auto;
+	 font: 12px/2 "宋体";
+}
+.time {
+	float: left;
+	color: #5c5b5b;
+}
+.floatRight {
+	float: right;
+}
+.floatRight a,
+.floatRight span {
+	float: left;
+	color: #fff;
+}
+.floatRight a:hover {
+	color: #db0f00;
+}
+.floatRight span {
+	width: 1px;
+	height: 12px;
+	background-color: #fff;
+	margin: 6px 9px 0 8px;
+}
+h1 {
+	font-size: 0;
+	height: 0;
+	padding-top: 69px;
+	background: url(../img/schoolLogo.png) no-repeat;
+	margin: 42px 0 60px 42px;
+}
+.navWrap {
+	width: 990px;
+	margin-left: -15px;
+}
+.navWrap .left {
+	width: 3px;
+	height: 72px;
+	background: url(../img/navleft.jpg) no-repeat;
+	float: left;
+}
+.nav1 {
+	width: 984px;
+	float: left;
+	height: 40px;
+	position: relative;
+	background: url(../img/navcontent.jpg) repeat-x;
+}
+.nav1 li{
+	float: left;
+	/*position: relative;*/
+}
+.nav1 .navs a {
+	float: left;
+	font: bold 15px/24px "宋体";
+	color: #fff;
+	padding: 1px 4px; 
+	margin: 8px 0 7px 27px;
+}
+.nav1 .navs a.active {
+	padding: 0 3px;
+	border: 1px solid #50728b;
+	color: #007da3;
+	background-color: #f7fff9;
+	border-radius: 3px;
+}
+.nav1 span {
+	display:inline-block;
+	vertical-align: top;
+	width: 10px;
+}
+.navWrap .right {
+	float: right;
+	width: 3px;
+	height: 72px;
+	background: url(../img/navright.jpg) no-repeat;
+}
+.nav2 {
+	position: absolute;
+	display: none;
+	left: 0;
+	top: 40px;
+	width: 907px;
+	height: 32px;
+	background: url(../img/navcontent.jpg) repeat-x 0 -40px;
+	padding-left: 77px;
+	font: 12px/32px "宋体";
+}
+.nav2 a,
+.nav2 span {
+	float: left;
+	color: #5c5b5b;
+}
+.nav2 span {
+	width: 1px;
+	height: 12px;
+	background-color: #5c5b5b;
+	margin: 10px 8px 0 9px;
+}
+.nav2 a:hover {
+	color: #00a3c9;
+	text-decoration: underline;
+}
+footer {
+	width: 990px;
+	background: url(../img/footerbg.jpg) repeat-x;
+	margin: 0 auto;
+	height: 300px;
+}
+footer .box {
+	font: 12px/28px "宋体";
+	padding-right: 12px;
+	margin-bottom: 10px;
+}
+footer .box a,
+footer .box span {
+	float: right;
+	color: #5c5b5b;
+}
+footer .box span {
+	width: 1px;
+	height: 12px;
+	background: #5c5b5b;
+	margin: 9px 8px 0 9px;
+}
+footer .logo {
+	width: 54px;
+	height: 51px;
+	background: url(../img/footerLogo.jpg) no-repeat;
+	float: left;
+	margin: 11px 16px 0 31px;
+}
+footer .referral {
+	font: 12px/21px "宋体";
+	color: #5c5b5b;
+	padding-left: 21px;
+	background: url(../img/footerBorder.jpg) no-repeat;
+	float: left;
+}
+footer .referral span {
+	display: block;
+	
+}
+
+
+
+// 中间部分
+#content{
+	height: 500px;
+	width: 990px;
+	border:1px solid #333;
+}
+
+
+
+
