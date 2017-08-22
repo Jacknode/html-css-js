@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>要闻</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/list.css">
+    <script>
+        (function () {
+            var html = document.querySelector('html');
+            html.style.fontSize = html.clientWidth/20+'px';
+        })();
+    </script>
+</head>
+<body>
+<header>
+   <span>今日要闻</span>
+</header>
+<div id="wrap">
+    <div class="scroll">
+        <div class="picTab">
+            <ul class="pics">
+                <li>
+                    <a href="javascript:;">
+                        <img src="img/blue.png" alt="">
+                    </a>
+                    <p>男子杀人后化身"变色龙" 骑摩托换装逃亡2000</p>
+                </li>
+            </ul>
+        </div>
+        <div class="cards">
+            <div class="newCard">
+                <a href="javascript:;">
+                    <div class="imgOne">
+                        <img src="img/ren.png">
+                    </div>
+                    <div class="Description">
+                        <p>男孩赴天津找工作"失联"12天 曾致电父亲称在河北</p>
+                        <div class="Thread">
+                            <span class="addre">新闻</span>
+                            <div class="threads">
+                                <span>254跟帖</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="head">
+                <h4><i class="fa fa-navicon"></i>2017群国多地遭遇暴雨</h4>
+            </div>
+            <div class="newCard">
+                <a href="javascript:;">
+                    <div class="imgOne">
+                        <img src="img/car.png">
+                    </div>
+                    <div class="Description">
+                        <p>私家车肇事后"司机"逃逸 警方:"开车"的是一头熊</p>
+                        <div class="Thread">
+                            <span class="addre">新闻</span>
+                            <div class="threads">
+                                <span>254跟帖</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="newCard">
+                <a href="javascript:;">
+                    <div class="imgOne">
+                        <img src="img/meinv.png">
+                    </div>
+                    <div class="Description">
+                        <p>韩前驻俄罗斯文化院长被撤职 长期性骚扰临时雇员</p>
+                        <div class="Thread">
+                            <span class="addre">新闻</span>
+                            <div class="threads">
+                                <span>254跟帖</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="javascript:;">
+                    <h3>
+                        名校大学生游泳溺亡 监控曝光其挣扎1分钟无人
+                    </h3>
+                    <div class="imgs">
+                        <img src="img/da1.png" alt="">
+                        <img src="img/da2.png" alt="">
+                        <img src="img/da3.png" alt="">
+                    </div>
+                    <div class="Thread">
+                        <span class="addre">4小时前</span>
+                        <div class="threads">
+                            <span>1875</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="javascript:;">
+                    <h3>
+                        警方千里押解嫌犯 吃喝拉撒都要盯着
+                    </h3>
+                    <div class="imgs">
+                            <img src="img/jin1.jpeg" alt="">
+                            <img src="img/jin2.jpeg" alt="">
+                            <img src="img/jin3.jpeg" alt="">
+                    </div>
+                    <div class="Thread">
+                        <span class="addre">4小时前</span>
+                        <div class="threads">
+                            <span>1253</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="newCard">
+                <a href="javascript:;">
+                    <div class="imgOne">
+                        <img src="img/tuixiu.png">
+                    </div>
+                    <div class="Description">
+                        <p>退休厅官落马牵出"案中案":其司机利用影响力敛财</p>
+                        <div class="Thread">
+                            <span class="addre">4小时前</span>
+                            <div class="threads">
+                                <span>254跟帖</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="newCard">
+                <a href="javascript:;">
+                    <div class="imgOne">
+                        <img src="img/gouzhi.png">
+                    </div>
+                    <div class="Description">
+                        <p>车辆购置税法征求意见 税率不变征税对象改为4类</p>
+                        <div class="Thread">
+                            <span class="addre">4小时前</span>
+                            <div class="threads">
+                                <span>458</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="newCard">
+                <a href="javascript:;">
+                    <div class="imgOne">
+                        <img src="img/maotai.png">
+                    </div>
+                    <div class="Description">
+                        <p>茅台北京地区限购限价 专卖店称开门即售罄</p>
+                        <div class="Thread">
+                            <span class="addre">5小时前</span>
+                            <div class="threads">
+                                <span>1159</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <ul id="list"></ul>
+    </div>
+</div>
+<!--底部导航菜单-->
+<footer>
+    <ul class="footList">
+        <li class="active">
+            <span class="fa fa-list-ul all"></span>
+            <p>首页</p>
+        </li>
+        <li>
+            <span class="fa fa-lightbulb-o all"></span>
+            <p>要闻</p>
+        </li>
+        <li>
+            <span class="fa fa-video-camera all"></span>
+            <p>直播</p>
+        </li>
+        <li>
+            <span class="fa fa-toggle-right all"></span>
+            <p>视频</p>
+        </li>
+        <li>
+            <span class="fa fa-user-circle all"></span>
+            <p>我</p>
+        </li>
+    </ul>
+</footer>
+<script src="js/m.touch.js"></script>
+<script src="js/fn.js"></script>
+</body>
+</html>

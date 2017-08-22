@@ -1,0 +1,1748 @@
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+textarea {
+  resize: none;
+  overflow: auto;
+}
+em {
+  font-style: normal;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+p,
+h2 {
+  margin: 0;
+  font-weight: normal;
+}
+a,
+input {
+  -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+body,
+html {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+img {
+  vertical-align: top;
+}
+.wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.wrap .music {
+  width: 1.85185185rem;
+  height: 1.85185185rem;
+  position: absolute;
+  background: url("../img/Music.png") no-repeat;
+  right: 0.74074074rem;
+  top: 0.74074074rem;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 2222;
+}
+.page {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fefefe;
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100%, 0);
+}
+.pageActive {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.pagePrev {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+#page1 {
+  background: url("../img/bg2.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+#page1 .Resume {
+  position: absolute;
+  top: 5.81481481rem;
+  width: 9.25925926rem;
+  left: 5.40740741rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page1 .Resume img {
+  width: 100%;
+  height: 100%;
+}
+#page1 .Resume.show {
+  animation: slideDown 1000ms ease 400ms both running;
+  -webkit-animation: slideDown 1000ms ease 400ms both running;
+}
+#page1 .content {
+  position: absolute;
+  top: 7.55555556rem;
+  left: 6.59259259rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page1 .content span {
+  color: #c3c3c3;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  font-size: 0.74074074rem;
+  letter-spacing: 4px;
+}
+#page1 .content.show {
+  -webkit-animation: slideDown 1000ms ease 1200ms both running;
+  animation: slideDown 1000ms ease 1200ms both running;
+}
+#page1 .English {
+  width: 13.2962963rem;
+  position: absolute;
+  top: 8.14814815rem;
+  left: 3.33333333rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page1 .English img {
+  width: 100%;
+  height: 100%;
+}
+#page1 .English.show {
+  animation: slideDown 1000ms ease 1000ms both running;
+  -webkit-animation: slideDown 1000ms ease 1000ms both running;
+}
+#page1 .Avatar {
+  position: absolute;
+  top: 15.55555556rem;
+  width: 5.18518519rem;
+  height: 5.18518519rem;
+  left: 7.03703704rem;
+  -webkit-transform: scale3d(0, 0, 0);
+  transform: scale3d(0, 0, 0);
+  opacity: 0;
+}
+#page1 .Avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 4px solid #fff;
+}
+#page1 .Avatar.show {
+  animation: avatar 1000ms ease 2600ms both running;
+  -webkit-animation: avatar 1000ms ease 2600ms both running;
+}
+#page1 .texts {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 21.37037037rem;
+  height: 6.33333333rem;
+}
+#page1 .texts h2 {
+  padding: 0.74074074rem 0;
+  color: #4fddc7;
+  font-size: 1.11111111rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page1 .texts h2.show {
+  animation: fadeInUp 1000ms ease 3200ms both running;
+  -webkit-animation: fadeInUp 1000ms ease 3200ms both running;
+}
+#page1 .texts img {
+  width: 12.96296296rem;
+  height: 0.09259259rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page1 .texts img.show {
+  animation: fadeInUp 1000ms ease 3400ms both running;
+  -webkit-animation: fadeInUp 1000ms ease 3400ms both running;
+}
+#page1 .texts p:nth-of-type(1).show {
+  -webkit-animation: fadeInUp 1000ms ease 4000ms both running;
+  animation: fadeInUp 1000ms ease 4000ms both running;
+}
+#page1 .texts p:nth-of-type(2).show {
+  -webkit-animation: fadeInUp 1000ms ease 4200ms both running;
+  animation: fadeInUp 1000ms ease 4200ms both running;
+}
+#page1 .texts p:nth-of-type(3).show {
+  -webkit-animation: fadeInUp 1000ms ease 4400ms both running;
+}
+#page1 .texts p {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+  line-height: 1.48148148rem;
+  font-size: 0.92592593rem;
+  color: #fff;
+}
+.maka-Arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  z-index: 111;
+  -webkit-animation-name: arrowing;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+}
+.maka-Arrow img {
+  width: 100%;
+  height: 100%;
+}
+#page2 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+  position: relative;
+}
+#page2 .ipad {
+  position: absolute;
+  right: 0.18518519rem;
+  top: -3.51851852rem;
+  width: 10.68518519rem;
+  height: 7.42592593rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page2 .ipad img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .ipad.show {
+  animation: slideDown 1000ms ease 600ms both running;
+  -webkit-animation: slideDown 1000ms ease 600ms both running;
+}
+#page2 .Basic {
+  width: 12.40740741rem;
+  height: 2.33333333rem;
+  top: 3.64814815rem;
+  position: absolute;
+  background: url("../img/Basic.png") no-repeat 10px 0;
+  background-size: cover;
+  left: -2.22222222rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page2 .Basic span {
+  color: #fff;
+  position: absolute;
+  right: 2.77777778rem;
+  line-height: 2.33333333rem;
+  font-size: 1.11111111rem;
+  letter-spacing: 5px;
+}
+#page2 .Basic.show {
+  animation: fadeInLeft 1000ms ease 1200ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1200ms both running;
+}
+#page2 .PurpleIcon {
+  position: absolute;
+  left: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 2.22222222rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page2 .PurpleIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .PurpleIcon.show {
+  animation: fadeInNormal 1000ms ease 600ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 600ms both running;
+}
+#page2 .downRed {
+  position: absolute;
+  left: 3.85185185rem;
+  bottom: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 3.14814815rem;
+  opacity: 0;
+}
+#page2 .downRed img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .downRed.show {
+  animation: fadeInNormal 1000ms ease 200ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 200ms both running;
+}
+#page2 .redIcon {
+  position: absolute;
+  left: 5.55555556rem;
+  bottom: 2.22222222rem;
+  width: 2.59259259rem;
+  height: 1.85185185rem;
+  opacity: 0;
+}
+#page2 .redIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .redIcon.show {
+  animation: fadeInNormal 1000ms ease 400ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 400ms both running;
+}
+#page2 .longLine {
+  position: absolute;
+  width: 9.77777778rem;
+  right: 0;
+  height: 0.03703704rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page2 .longLine img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .longLine.show {
+  animation: fadeInLeft 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+}
+#page2 .upLine {
+  position: absolute;
+  width: 0.09259259rem;
+  height: 3.25925926rem;
+  right: 1.85185185rem;
+  bottom: 2.03703704rem;
+  opacity: 0;
+}
+#page2 .upLine img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .upLine.show {
+  animation: fadeInDown 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3800ms both running;
+}
+#page2 .About {
+  position: absolute;
+  right: 0;
+  bottom: 2.51851852rem;
+  width: 7.22222222rem;
+  opacity: 0;
+}
+#page2 .About span {
+  color: #fed97e;
+  font-size: 1.11111111rem;
+}
+#page2 .About.show {
+  animation: fadeInNormal 1000ms ease 4000ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 4000ms both running;
+}
+#page2 .avatarIcon {
+  width: 4.2962963rem;
+  height: 4.2962963rem;
+  position: absolute;
+  top: 8.33333333rem;
+  left: 4.81481481rem;
+  opacity: 0;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+#page2 .avatarIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .avatarIcon.show {
+  animation: rotateIn 1000ms ease 1800ms both running;
+  -webkit-animation: rotateIn 1000ms ease 1800ms both running;
+}
+#page2 .yellow {
+  position: absolute;
+  top: 7.59259259rem;
+  left: 4.07407407rem;
+  width: 5.81481481rem;
+  height: 5.81481481rem;
+  opacity: 0;
+  -webkit-transform: rotate(0);
+  transform: rotate(0);
+}
+#page2 .yellow img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .yellow.show {
+  animation: rotateIn 1000ms ease 1800ms both running;
+  -webkit-animation: rotateIn 1000ms ease 1800ms both running;
+}
+#page2 .whiteRaduls {
+  position: absolute;
+  top: 7.77777778rem;
+  left: 6.85185185rem;
+  width: 2.85185185rem;
+  height: 2.7037037rem;
+  opacity: 0;
+}
+#page2 .whiteRaduls img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .whiteRaduls.show {
+  animation: fadeInNormal 1000ms ease 2000ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 2000ms both running;
+}
+#page2 .name {
+  position: absolute;
+  width: 9.16666667rem;
+  height: 1.2962963rem;
+  right: 0;
+  top: 8.7037037rem;
+  opacity: 0;
+}
+#page2 .name span {
+  color: #ffffff;
+  font-size: 1.2962963rem;
+  letter-spacing: 5px;
+}
+#page2 .name.show {
+  animation: fadeInNormal 1000ms ease 2600ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 2600ms both running;
+}
+#page2 .WhiteLine {
+  width: 6.25925926rem;
+  position: absolute;
+  right: 4.25925926rem;
+  height: 0.03703704rem;
+  top: 10.46296296rem;
+  opacity: 0;
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+}
+#page2 .WhiteLine img {
+  width: 100%;
+  height: 100%;
+}
+#page2 .WhiteLine.show {
+  animation: stretchRight 1000ms ease 2400ms both running;
+  -webkit-animation: stretchRight 1000ms ease 2400ms both running;
+}
+#page2 .Pinyin {
+  position: absolute;
+  width: 9.16666667rem;
+  height: 1.2962963rem;
+  right: 0;
+  top: 10.74074074rem;
+  opacity: 0;
+}
+#page2 .Pinyin span {
+  color: #9f9daf;
+  font-size: 0.92592593rem;
+}
+#page2 .Pinyin.show {
+  animation: fadeInNormal 1000ms ease 2600ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 2600ms both running;
+}
+#page2 .Birth {
+  position: absolute;
+  top: 15.92592593rem;
+  left: 3.7037037rem;
+  width: 5.55555556rem;
+  height: auto;
+  opacity: 0;
+}
+#page2 .Birth span {
+  color: #fed97e;
+  font-size: 0.92592593rem;
+}
+#page2 .Birth.show {
+  animation: fadeInDown 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3000ms both running;
+}
+#page2 .BirthVal {
+  position: absolute;
+  top: 17.22222222rem;
+  left: 3.7037037rem;
+  width: 7.40740741rem;
+  height: auto;
+  opacity: 0;
+}
+#page2 .BirthVal span {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page2 .BirthVal.show {
+  animation: fadeInUp 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInUp 1000ms ease 3000ms both running;
+}
+#page2 .Email {
+  position: absolute;
+  top: 15.92592593rem;
+  right: 3.33333333rem;
+  width: 6.11111111rem;
+  height: auto;
+  opacity: 0;
+}
+#page2 .Email span {
+  color: #fed97e;
+  font-size: 0.92592593rem;
+}
+#page2 .Email.show {
+  animation: fadeInDown 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3000ms both running;
+}
+#page2 .EmailVal {
+  position: absolute;
+  top: 17.22222222rem;
+  right: 3.33333333rem;
+  width: 6.11111111rem;
+  height: auto;
+  opacity: 0;
+}
+#page2 .EmailVal span {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page2 .EmailVal.show {
+  animation: fadeInUp 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInUp 1000ms ease 3000ms both running;
+}
+#page2 .phone {
+  position: absolute;
+  left: 3.7037037rem;
+  top: 19.62962963rem;
+  width: 5.55555556rem;
+  opacity: 0;
+  height: auto;
+}
+#page2 .phone span {
+  color: #fed97e;
+  font-size: 0.92592593rem;
+}
+#page2 .phone.show {
+  animation: fadeInDown 1000ms ease 3200ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3200ms both running;
+}
+#page2 .phoneVal {
+  position: absolute;
+  left: 3.7037037rem;
+  top: 20.92592593rem;
+  width: 5.55555556rem;
+  height: auto;
+  opacity: 0;
+}
+#page2 .phoneVal span {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page2 .phoneVal.show {
+  animation: fadeInUp 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInUp 1000ms ease 3000ms both running;
+}
+#page2 .address {
+  position: absolute;
+  top: 19.62962963rem;
+  right: 3.33333333rem;
+  width: 6.11111111rem;
+  height: auto;
+  opacity: 0;
+}
+#page2 .address span {
+  color: #fed97e;
+  font-size: 0.92592593rem;
+}
+#page2 .address.show {
+  animation: fadeInDown 1000ms ease 3200ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3200ms both running;
+}
+#page2 .addressVal {
+  position: absolute;
+  top: 20.92592593rem;
+  right: 3.33333333rem;
+  width: 6.11111111rem;
+  height: auto;
+  opacity: 0;
+}
+#page2 .addressVal span {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page2 .addressVal.show {
+  animation: fadeInUp 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInUp 1000ms ease 3000ms both running;
+}
+#page3 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+}
+#page3 .ipad {
+  position: absolute;
+  right: 0.18518519rem;
+  top: -3.51851852rem;
+  width: 10.68518519rem;
+  height: 7.42592593rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page3 .ipad img {
+  width: 100%;
+  height: 100%;
+}
+#page3 .ipad.show {
+  animation: slideDown 1000ms ease 600ms both running;
+  -webkit-animation: slideDown 1000ms ease 600ms both running;
+}
+#page3 .Basic {
+  width: 12.40740741rem;
+  height: 2.33333333rem;
+  top: 3.64814815rem;
+  position: absolute;
+  background: url("../img/Basic.png") no-repeat 10px 0;
+  background-size: cover;
+  left: -2.22222222rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page3 .Basic span {
+  color: #fff;
+  position: absolute;
+  right: 2.77777778rem;
+  line-height: 2.33333333rem;
+  font-size: 1.11111111rem;
+  letter-spacing: 5px;
+}
+#page3 .Basic.show {
+  animation: fadeInLeft 1000ms ease 1200ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1200ms both running;
+}
+#page3 .PurpleIcon {
+  position: absolute;
+  left: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 2.22222222rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page3 .PurpleIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page3 .PurpleIcon.show {
+  animation: fadeInNormal 1000ms ease 600ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 600ms both running;
+}
+#page3 .downRed {
+  position: absolute;
+  left: 3.85185185rem;
+  bottom: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 3.14814815rem;
+  opacity: 0;
+}
+#page3 .downRed img {
+  width: 100%;
+  height: 100%;
+}
+#page3 .downRed.show {
+  animation: fadeInNormal 1000ms ease 200ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 200ms both running;
+}
+#page3 .redIcon {
+  position: absolute;
+  left: 5.55555556rem;
+  bottom: 2.22222222rem;
+  width: 2.59259259rem;
+  height: 1.85185185rem;
+  opacity: 0;
+}
+#page3 .redIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page3 .redIcon.show {
+  animation: fadeInNormal 1000ms ease 400ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 400ms both running;
+}
+#page3 .longLine {
+  position: absolute;
+  width: 9.77777778rem;
+  right: 0;
+  height: 0.03703704rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page3 .longLine img {
+  width: 100%;
+  height: 100%;
+}
+#page3 .longLine.show {
+  animation: fadeInLeft 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+}
+#page3 .upLine {
+  position: absolute;
+  width: 0.09259259rem;
+  height: 3.25925926rem;
+  right: 1.85185185rem;
+  bottom: 2.03703704rem;
+  opacity: 0;
+}
+#page3 .upLine img {
+  width: 100%;
+  height: 100%;
+}
+#page3 .upLine.show {
+  animation: fadeInDown 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3800ms both running;
+}
+#page3 .About {
+  position: absolute;
+  right: 0;
+  bottom: 2.51851852rem;
+  width: 7.22222222rem;
+  opacity: 0;
+}
+#page3 .About span {
+  color: #fed97e;
+  font-size: 1.11111111rem;
+}
+#page3 .About.show {
+  animation: fadeInNormal 1000ms ease 4000ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 4000ms both running;
+}
+#page3 .school {
+  position: absolute;
+  top: 8.48148148rem;
+  left: 4.07407407rem;
+  width: 11.2962963rem;
+  height: auto;
+  margin: 0 auto;
+  opacity: 0;
+}
+#page3 .school p {
+  color: #ffffff;
+}
+#page3 .school.show {
+  animation: fadeInRight 1000ms ease 1800ms both running;
+  -webkit-animation: fadeInRight 1000ms ease 1800ms both running;
+}
+#page3 .Brief {
+  position: absolute;
+  bottom: 8.14814815rem;
+  left: 4.07407407rem;
+  width: 11.2962963rem;
+  height: auto;
+  margin: 0 auto;
+  opacity: 0;
+}
+#page3 .Brief p {
+  color: #ffffff;
+}
+#page3 .Brief.show {
+  animation: fadeInLeft 1000ms ease 1800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1800ms both running;
+}
+#page4 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+}
+#page4 .ipad {
+  position: absolute;
+  right: 0.18518519rem;
+  top: -3.51851852rem;
+  width: 10.68518519rem;
+  height: 7.42592593rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page4 .ipad img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .ipad.show {
+  animation: slideDown 1000ms ease 600ms both running;
+  -webkit-animation: slideDown 1000ms ease 600ms both running;
+}
+#page4 .Basic {
+  width: 12.40740741rem;
+  height: 2.33333333rem;
+  top: 3.64814815rem;
+  position: absolute;
+  background: url("../img/Basic.png") no-repeat 10px 0;
+  background-size: cover;
+  left: -2.22222222rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page4 .Basic span {
+  color: #fff;
+  position: absolute;
+  right: 2.77777778rem;
+  line-height: 2.33333333rem;
+  font-size: 1.11111111rem;
+  letter-spacing: 5px;
+}
+#page4 .Basic.show {
+  animation: fadeInLeft 1000ms ease 1200ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1200ms both running;
+}
+#page4 .PurpleIcon {
+  position: absolute;
+  left: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 2.22222222rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page4 .PurpleIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .PurpleIcon.show {
+  animation: fadeInNormal 1000ms ease 600ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 600ms both running;
+}
+#page4 .downRed {
+  position: absolute;
+  left: 3.85185185rem;
+  bottom: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 3.14814815rem;
+  opacity: 0;
+}
+#page4 .downRed img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .downRed.show {
+  animation: fadeInNormal 1000ms ease 200ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 200ms both running;
+}
+#page4 .redIcon {
+  position: absolute;
+  left: 5.55555556rem;
+  bottom: 2.22222222rem;
+  width: 2.59259259rem;
+  height: 1.85185185rem;
+  opacity: 0;
+}
+#page4 .redIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .redIcon.show {
+  animation: fadeInNormal 1000ms ease 400ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 400ms both running;
+}
+#page4 .longLine {
+  position: absolute;
+  width: 9.77777778rem;
+  right: 0;
+  height: 0.03703704rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page4 .longLine img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .longLine.show {
+  animation: fadeInLeft 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+}
+#page4 .upLine {
+  position: absolute;
+  width: 0.09259259rem;
+  height: 3.25925926rem;
+  right: 1.85185185rem;
+  bottom: 2.03703704rem;
+  opacity: 0;
+}
+#page4 .upLine img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .upLine.show {
+  animation: fadeInDown 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3800ms both running;
+}
+#page4 .About {
+  position: absolute;
+  right: 0;
+  bottom: 2.51851852rem;
+  width: 7.22222222rem;
+  opacity: 0;
+}
+#page4 .About span {
+  color: #fed97e;
+  font-size: 1.11111111rem;
+}
+#page4 .About.show {
+  animation: fadeInNormal 1000ms ease 4000ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 4000ms both running;
+}
+#page4 .workDown {
+  position: absolute;
+  left: 4.07407407rem;
+  top: 8.33333333rem;
+  width: 0.92592593rem;
+  height: 0.37037037rem;
+  opacity: 0;
+}
+#page4 .workDown img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .workDown.show {
+  animation: fadeInNormal 1000ms ease 1800ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 1800ms both running;
+}
+#page4 .workLine {
+  position: absolute;
+  left: 4.51851852rem;
+  top: 8.7037037rem;
+  width: 0.07407407rem;
+  height: 14.81481481rem;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  opacity: 0;
+}
+#page4 .workLine img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .workLine.show {
+  animation: pullDown 1000ms ease 2000ms both running;
+  -webkit-animation: pullDown 1000ms ease 2000ms both running;
+}
+#page4 .Round1 {
+  position: absolute;
+  left: 4.14814815rem;
+  top: 12.59259259rem;
+  width: 0.74074074rem;
+  height: 0.74074074rem;
+  z-index: 3;
+  opacity: 0;
+}
+#page4 .Round1 img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .Round1.show {
+  animation: zoomIn 1000ms ease 3000ms both running;
+  -webkit-animation: zoomIn 1000ms ease 3000ms both running;
+}
+#page4 .Round2 {
+  position: absolute;
+  left: 4.14814815rem;
+  top: 16.48148148rem;
+  width: 0.74074074rem;
+  height: 0.74074074rem;
+  z-index: 3;
+  opacity: 0;
+}
+#page4 .Round2 img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .Round2.show {
+  animation: zoomIn 1000ms ease 3200ms both running;
+  -webkit-animation: zoomIn 1000ms ease 3200ms both running;
+}
+#page4 .Round3 {
+  position: absolute;
+  left: 4.14814815rem;
+  top: 20.37037037rem;
+  width: 0.74074074rem;
+  height: 0.74074074rem;
+  z-index: 3;
+  opacity: 0;
+}
+#page4 .Round3 img {
+  width: 100%;
+  height: 100%;
+}
+#page4 .Round3.show {
+  animation: zoomIn 1000ms ease 3400ms both running;
+  -webkit-animation: zoomIn 1000ms ease 3400ms both running;
+}
+#page4 .Round3Val2 {
+  position: absolute;
+  left: 5.55555556rem;
+  height: auto;
+  top: 12.7037037rem;
+  opacity: 0;
+}
+#page4 .Round3Val2 span {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page4 .Round3Val2.show {
+  animation: fadeInRight 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInRight 1000ms ease 3000ms both running;
+}
+#page4 .Round3Val1 {
+  position: absolute;
+  left: 5.55555556rem;
+  height: auto;
+  top: 11.59259259rem;
+  opacity: 0;
+}
+#page4 .Round3Val1 span {
+  color: #fed97e;
+  font-size: 0.92592593rem;
+}
+#page4 .Round3Val1.show {
+  animation: fadeInRight 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInRight 1000ms ease 3000ms both running;
+}
+#page4 .Round1Val2 {
+  position: absolute;
+  left: 5.55555556rem;
+  height: auto;
+  top: 15.66666667rem;
+  opacity: 0;
+}
+#page4 .Round1Val2 span {
+  color: #fed97e;
+  font-size: 0.92592593rem;
+}
+#page4 .Round1Val2.show {
+  animation: fadeInRight 1000ms ease 3200ms both running;
+  -webkit-animation: fadeInRight 1000ms ease 3200ms both running;
+}
+#page4 .Round1Val1 {
+  position: absolute;
+  left: 5.55555556rem;
+  height: auto;
+  top: 16.77777778rem;
+  opacity: 0;
+}
+#page4 .Round1Val1 span {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page4 .Round1Val1.show {
+  animation: fadeInRight 1000ms ease 3200ms both running;
+  -webkit-animation: fadeInRight 1000ms ease 3200ms both running;
+}
+#page4 .Round2Val1 {
+  position: absolute;
+  left: 5.55555556rem;
+  height: auto;
+  top: 19.62962963rem;
+  opacity: 0;
+}
+#page4 .Round2Val1 span {
+  color: #fed97e;
+  font-size: 0.92592593rem;
+}
+#page4 .Round2Val1.show {
+  animation: fadeInRight 1000ms ease 3400ms both running;
+  -webkit-animation: fadeInRight 1000ms ease 3400ms both running;
+}
+#page4 .Round2Val2 {
+  position: absolute;
+  left: 5.55555556rem;
+  height: auto;
+  top: 20.85185185rem;
+  opacity: 0;
+}
+#page4 .Round2Val2 span {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page4 .Round2Val2.show {
+  animation: fadeInRight 1000ms ease 3400ms both running;
+  -webkit-animation: fadeInRight 1000ms ease 3400ms both running;
+}
+#page5 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+}
+#page5 .ipad {
+  position: absolute;
+  right: 0.18518519rem;
+  top: -3.51851852rem;
+  width: 10.68518519rem;
+  height: 7.42592593rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page5 .ipad img {
+  width: 100%;
+  height: 100%;
+}
+#page5 .ipad.show {
+  animation: slideDown 1000ms ease 600ms both running;
+  -webkit-animation: slideDown 1000ms ease 600ms both running;
+}
+#page5 .Basic {
+  width: 12.40740741rem;
+  height: 2.33333333rem;
+  top: 3.64814815rem;
+  position: absolute;
+  background: url("../img/Basic.png") no-repeat 10px 0;
+  background-size: cover;
+  left: -2.22222222rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page5 .Basic span {
+  color: #fff;
+  position: absolute;
+  right: 2.77777778rem;
+  line-height: 2.33333333rem;
+  font-size: 1.11111111rem;
+  letter-spacing: 5px;
+}
+#page5 .Basic.show {
+  animation: fadeInLeft 1000ms ease 1200ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1200ms both running;
+}
+#page5 .PurpleIcon {
+  position: absolute;
+  left: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 2.22222222rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page5 .PurpleIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page5 .PurpleIcon.show {
+  animation: fadeInNormal 1000ms ease 600ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 600ms both running;
+}
+#page5 .downRed {
+  position: absolute;
+  left: 3.85185185rem;
+  bottom: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 3.14814815rem;
+  opacity: 0;
+}
+#page5 .downRed img {
+  width: 100%;
+  height: 100%;
+}
+#page5 .downRed.show {
+  animation: fadeInNormal 1000ms ease 200ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 200ms both running;
+}
+#page5 .redIcon {
+  position: absolute;
+  left: 5.55555556rem;
+  bottom: 2.22222222rem;
+  width: 2.59259259rem;
+  height: 1.85185185rem;
+  opacity: 0;
+}
+#page5 .redIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page5 .redIcon.show {
+  animation: fadeInNormal 1000ms ease 400ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 400ms both running;
+}
+#page5 .longLine {
+  position: absolute;
+  width: 9.77777778rem;
+  right: 0;
+  height: 0.03703704rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page5 .longLine img {
+  width: 100%;
+  height: 100%;
+}
+#page5 .longLine.show {
+  animation: fadeInLeft 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+}
+#page5 .upLine {
+  position: absolute;
+  width: 0.09259259rem;
+  height: 3.25925926rem;
+  right: 1.85185185rem;
+  bottom: 2.03703704rem;
+  opacity: 0;
+}
+#page5 .upLine img {
+  width: 100%;
+  height: 100%;
+}
+#page5 .upLine.show {
+  animation: fadeInDown 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3800ms both running;
+}
+#page5 .About {
+  position: absolute;
+  right: 0;
+  bottom: 2.51851852rem;
+  width: 7.22222222rem;
+  opacity: 0;
+}
+#page5 .About span {
+  color: #fed97e;
+  font-size: 1.11111111rem;
+}
+#page5 .About.show {
+  animation: fadeInNormal 1000ms ease 4000ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 4000ms both running;
+}
+#page5 .wrapImg {
+  position: absolute;
+  top: 6.96296296rem;
+  left: 50%;
+  width: 11.66666667rem;
+  height: 17.40740741rem;
+  margin-left: -5.83333333rem;
+  overflow: hidden;
+}
+#page5 .wrapImg li {
+  width: 11.66666667rem;
+  height: 17.40740741rem;
+  float: left;
+}
+#page5 .wrapImg li img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  vertical-align: top;
+}
+#page5 .wrapImg .num {
+  position: absolute;
+  bottom: 0.37037037rem;
+  z-index: 5;
+  width: 100%;
+  height: 0.74074074rem;
+  text-align: center;
+}
+#page5 .wrapImg .num span {
+  cursor: pointer;
+  display: inline-block;
+  width: 0.74074074rem;
+  height: 0.74074074rem;
+  background: #000;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+#page5 .wrapImg .num span.active {
+  border: 1px solid #000;
+  background: #fff;
+}
+#page7 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+}
+#page7 .ipad {
+  position: absolute;
+  right: 0.18518519rem;
+  top: -3.51851852rem;
+  width: 10.68518519rem;
+  height: 7.42592593rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page7 .ipad img {
+  width: 100%;
+  height: 100%;
+}
+#page7 .ipad.show {
+  animation: slideDown 1000ms ease 600ms both running;
+  -webkit-animation: slideDown 1000ms ease 600ms both running;
+}
+#page7 .Basic {
+  width: 12.40740741rem;
+  height: 2.33333333rem;
+  top: 3.64814815rem;
+  position: absolute;
+  background: url("../img/Basic.png") no-repeat 10px 0;
+  background-size: cover;
+  left: -2.22222222rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page7 .Basic span {
+  color: #fff;
+  position: absolute;
+  right: 2.77777778rem;
+  line-height: 2.33333333rem;
+  font-size: 1.11111111rem;
+  letter-spacing: 5px;
+}
+#page7 .Basic.show {
+  animation: fadeInLeft 1000ms ease 1200ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1200ms both running;
+}
+#page7 .PurpleIcon {
+  position: absolute;
+  left: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 2.22222222rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page7 .PurpleIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page7 .PurpleIcon.show {
+  animation: fadeInNormal 1000ms ease 600ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 600ms both running;
+}
+#page7 .downRed {
+  position: absolute;
+  left: 3.85185185rem;
+  bottom: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 3.14814815rem;
+  opacity: 0;
+}
+#page7 .downRed img {
+  width: 100%;
+  height: 100%;
+}
+#page7 .downRed.show {
+  animation: fadeInNormal 1000ms ease 200ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 200ms both running;
+}
+#page7 .redIcon {
+  position: absolute;
+  left: 5.55555556rem;
+  bottom: 2.22222222rem;
+  width: 2.59259259rem;
+  height: 1.85185185rem;
+  opacity: 0;
+}
+#page7 .redIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page7 .redIcon.show {
+  animation: fadeInNormal 1000ms ease 400ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 400ms both running;
+}
+#page7 .longLine {
+  position: absolute;
+  width: 9.77777778rem;
+  right: 0;
+  height: 0.03703704rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page7 .longLine img {
+  width: 100%;
+  height: 100%;
+}
+#page7 .longLine.show {
+  animation: fadeInLeft 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+}
+#page7 .upLine {
+  position: absolute;
+  width: 0.09259259rem;
+  height: 3.25925926rem;
+  right: 1.85185185rem;
+  bottom: 2.03703704rem;
+  opacity: 0;
+}
+#page7 .upLine img {
+  width: 100%;
+  height: 100%;
+}
+#page7 .upLine.show {
+  animation: fadeInDown 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3800ms both running;
+}
+#page7 .About {
+  position: absolute;
+  right: 0;
+  bottom: 2.51851852rem;
+  width: 7.22222222rem;
+  opacity: 0;
+}
+#page7 .About span {
+  color: #fed97e;
+  font-size: 1.11111111rem;
+}
+#page7 .About.show {
+  animation: fadeInNormal 1000ms ease 4000ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 4000ms both running;
+}
+#page7 .posts {
+  position: absolute;
+  left: 2.59259259rem;
+  top: 7.74074074rem;
+  width: 4.62962963rem;
+  height: auto;
+  opacity: 0;
+}
+#page7 .posts span {
+  color: #fed97e;
+  font-size: 0.74074074rem;
+}
+#page7 .posts.show {
+  animation: fadeInLeft 1000ms ease 1800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1800ms both running;
+}
+#page7 .postsVal {
+  position: absolute;
+  left: 2.59259259rem;
+  top: 9.22222222rem;
+  width: 4.62962963rem;
+  height: auto;
+  opacity: 0;
+}
+#page7 .postsVal span {
+  display: block;
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page7 .postsVal.show {
+  animation: fadeInLeft 1000ms ease 2000ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 2000ms both running;
+}
+#page7 .expectations {
+  position: absolute;
+  left: 2.59259259rem;
+  top: 11.85185185rem;
+  width: 4.62962963rem;
+  height: auto;
+  opacity: 0;
+}
+#page7 .expectations span {
+  color: #fed97e;
+  font-size: 0.74074074rem;
+}
+#page7 .expectations.show {
+  animation: fadeInLeft 1000ms ease 2400ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 2400ms both running;
+}
+#page7 .expectationsVal {
+  position: absolute;
+  left: 2.59259259rem;
+  top: 13.33333333rem;
+  width: 4.62962963rem;
+  height: auto;
+  opacity: 0;
+}
+#page7 .expectationsVal span {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page7 .expectationsVal.show {
+  animation: fadeInLeft 1000ms ease 2600ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 2600ms both running;
+}
+#page7 .mePost {
+  position: absolute;
+  left: 2.59259259rem;
+  top: 15.96296296rem;
+  width: 4.62962963rem;
+  height: auto;
+  opacity: 0;
+}
+#page7 .mePost span {
+  color: #fed97e;
+  font-size: 0.74074074rem;
+}
+#page7 .mePost.show {
+  animation: fadeInLeft 1000ms ease 3000ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3000ms both running;
+}
+#page7 .mePostVal {
+  position: absolute;
+  left: 2.59259259rem;
+  top: 17.44444444rem;
+  width: 12.59259259rem;
+  height: auto;
+  opacity: 0;
+}
+#page7 .mePostVal p {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page7 .mePostVal.show {
+  animation: fadeInLeft 1000ms ease 3200ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3200ms both running;
+}
+#page7 .believe {
+  position: absolute;
+  left: 2.59259259rem;
+  top: 19.7037037rem;
+  width: 4.62962963rem;
+  height: auto;
+  opacity: 0;
+}
+#page7 .believe span {
+  color: #fed97e;
+  font-size: 0.74074074rem;
+}
+#page7 .believe.show {
+  animation: fadeInLeft 1000ms ease 3600ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3600ms both running;
+}
+#page7 .believeVal {
+  position: absolute;
+  left: 2.59259259rem;
+  top: 21.18518519rem;
+  width: 12.59259259rem;
+  height: auto;
+  opacity: 0;
+}
+#page7 .believeVal p {
+  color: #fff;
+  font-size: 0.74074074rem;
+}
+#page7 .believeVal.show {
+  animation: fadeInLeft 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+}
+#page7 .workIcon {
+  position: absolute;
+  width: 9.74074074rem;
+  right: 0.74074074rem;
+  top: 7.59259259rem;
+  height: 8.14814815rem;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+#page7 .workIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page7 .workIcon.show {
+  animation: expandOpen 1000ms ease 1800ms both running;
+  -webkit-animation: expandOpen 1000ms ease 1800ms both running;
+}
+#page7 .About {
+  position: absolute;
+  right: 0;
+  bottom: 2.51851852rem;
+  width: 8.33333333rem;
+  opacity: 0;
+}
+#page7 .About span {
+  color: #fed97e;
+  font-size: 1.11111111rem;
+}
+#page7 .About.show {
+  animation: fadeIn 1000ms ease 4600ms both running;
+  -webkit-animation: fadeIn 1000ms ease 4600ms both running;
+}
+#page6 {
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+}
+#page6 .ipad {
+  position: absolute;
+  right: 0.18518519rem;
+  top: -3.51851852rem;
+  width: 10.68518519rem;
+  height: 7.42592593rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page6 .ipad img {
+  width: 100%;
+  height: 100%;
+}
+#page6 .ipad.show {
+  animation: slideDown 1000ms ease 600ms both running;
+  -webkit-animation: slideDown 1000ms ease 600ms both running;
+}
+#page6 .Basic {
+  width: 12.40740741rem;
+  height: 2.33333333rem;
+  top: 3.64814815rem;
+  position: absolute;
+  background: url("../img/Basic.png") no-repeat 10px 0;
+  background-size: cover;
+  left: -2.22222222rem;
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+  opacity: 0;
+}
+#page6 .Basic span {
+  color: #fff;
+  position: absolute;
+  right: 2.77777778rem;
+  line-height: 2.33333333rem;
+  font-size: 1.11111111rem;
+  letter-spacing: 5px;
+}
+#page6 .Basic.show {
+  animation: fadeInLeft 1000ms ease 1200ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1200ms both running;
+}
+#page6 .PurpleIcon {
+  position: absolute;
+  left: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 2.22222222rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page6 .PurpleIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page6 .PurpleIcon.show {
+  animation: fadeInNormal 1000ms ease 600ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 600ms both running;
+}
+#page6 .downRed {
+  position: absolute;
+  left: 3.85185185rem;
+  bottom: 1.85185185rem;
+  width: 2.03703704rem;
+  height: 3.14814815rem;
+  opacity: 0;
+}
+#page6 .downRed img {
+  width: 100%;
+  height: 100%;
+}
+#page6 .downRed.show {
+  animation: fadeInNormal 1000ms ease 200ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 200ms both running;
+}
+#page6 .redIcon {
+  position: absolute;
+  left: 5.55555556rem;
+  bottom: 2.22222222rem;
+  width: 2.59259259rem;
+  height: 1.85185185rem;
+  opacity: 0;
+}
+#page6 .redIcon img {
+  width: 100%;
+  height: 100%;
+}
+#page6 .redIcon.show {
+  animation: fadeInNormal 1000ms ease 400ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 400ms both running;
+}
+#page6 .longLine {
+  position: absolute;
+  width: 9.77777778rem;
+  right: 0;
+  height: 0.03703704rem;
+  bottom: 4.07407407rem;
+  opacity: 0;
+}
+#page6 .longLine img {
+  width: 100%;
+  height: 100%;
+}
+#page6 .longLine.show {
+  animation: fadeInLeft 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+}
+#page6 .upLine {
+  position: absolute;
+  width: 0.09259259rem;
+  height: 3.25925926rem;
+  right: 1.85185185rem;
+  bottom: 2.03703704rem;
+  opacity: 0;
+}
+#page6 .upLine img {
+  width: 100%;
+  height: 100%;
+}
+#page6 .upLine.show {
+  animation: fadeInDown 1000ms ease 3800ms both running;
+  -webkit-animation: fadeInDown 1000ms ease 3800ms both running;
+}
+#page6 .About {
+  position: absolute;
+  right: 0;
+  bottom: 2.51851852rem;
+  width: 7.22222222rem;
+  opacity: 0;
+}
+#page6 .About span {
+  color: #fed97e;
+  font-size: 1.11111111rem;
+}
+#page6 .About.show {
+  animation: fadeInNormal 1000ms ease 4000ms both running;
+  -webkit-animation: fadeInNormal 1000ms ease 4000ms both running;
+}
+#page6 .jobVal {
+  position: absolute;
+  top: 8.48148148rem;
+  left: 4.07407407rem;
+  width: 12.40740741rem;
+  height: auto;
+  margin: 0 auto;
+  opacity: 0;
+}
+#page6 .jobVal p {
+  word-wrap: break-word;
+  color: #ffffff;
+}
+#page6 .jobVal.show {
+  animation: fadeInLeft 1000ms ease 1800ms both running;
+  -webkit-animation: fadeInLeft 1000ms ease 1800ms both running;
+}
+#page6 .fouc {
+  position: absolute;
+  bottom: 8.14814815rem;
+  left: 4.07407407rem;
+  width: 11.2962963rem;
+  height: auto;
+  margin: 0 auto;
+  opacity: 0;
+}
+#page6 .fouc p {
+  color: #ffffff;
+}
+#page6 .fouc.show {
+  animation: fadeInRight 1000ms ease 1800ms both running;
+  -webkit-animation: fadeInRight 1000ms ease 1800ms both running;
+}

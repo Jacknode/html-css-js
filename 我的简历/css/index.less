@@ -1,0 +1,1084 @@
+input,textarea{margin:0;padding:0;border:none; outline:none;}
+textarea{ resize:none; overflow:auto;}
+em{ font-style:normal;}
+ul{margin:0;padding:0; list-style:none;}
+h1,p,h2{margin:0; font-weight:normal;}
+a,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+img{ border:none; vertical-align:top;}
+body,
+html {
+  position: relative;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+img{
+  vertical-align: top;
+}
+.wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  .music{
+    width:100/@r;
+    height: 100/@r;
+    position: absolute;
+    background: url("../img/Music.png") no-repeat;
+    right: 40/@r;
+    top:40/@r;
+    background-size: cover;
+    cursor: pointer;
+    z-index: 2222;
+  }
+}
+
+.page {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #fefefe;
+  -webkit-transform: translate3d(0, 100%,0);
+  transform: translate3d(0, 100%,0);
+}
+.pageActive {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+}
+.pagePrev {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+}
+@r:54rem;
+#page1{
+  background: url("../img/bg2.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  //display: none;
+  .Resume{
+    //transform: translateY(-30/@r);
+    position: absolute;
+    top: 314/@r;
+    width: 500/@r;
+    left: 292/@r;
+    -webkit-transform: translate3d(0, -100%,0);
+    transform: translate3d(0, -100%,0);
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .Resume.show{
+    //-webkit-animation: slideDown 1s;
+    //animation: slideDown 1s;
+    //-webkit-animation-fill-mode: both;
+    //animation-fill-mode: both;
+    animation: slideDown 1000ms ease 400ms both running;
+    -webkit-animation: slideDown 1000ms ease 400ms both running;
+  }
+
+  .content{
+    position: absolute;
+    top:408/@r;
+    left: 356/@r;
+    -webkit-transform: translate3d(0, -100%,0);
+    transform: translate3d(0, -100%,0);
+    opacity: 0;
+    span{
+      color: #c3c3c3;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      font-size:40/@r;
+      letter-spacing: 4px;
+    }
+  }
+  .content.show{
+    -webkit-animation: slideDown 1000ms ease 1200ms both running;
+    animation: slideDown 1000ms ease 1200ms both running;
+  }
+  .English{
+    width: 718/@r;
+    position: absolute;
+    top:440/@r;
+    left:180/@r;
+    -webkit-transform: translate3d(0, -100%,0);
+    transform: translate3d(0, -100%,0);
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .English.show{
+    animation: slideDown 1000ms ease 1000ms both running;
+    -webkit-animation: slideDown 1000ms ease 1000ms both running;
+  }
+  .Avatar{
+    position: absolute;
+    top:840/@r;
+    width: 280/@r;
+    height: 280/@r;
+    left: 380/@r;
+    -webkit-transform: scale3d(0,0,0);
+    transform: scale3d(0,0,0);
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border:4px solid #fff;
+    }
+  }
+  .Avatar.show{
+    animation: avatar 1000ms ease 2600ms both running;
+    -webkit-animation: avatar 1000ms ease 2600ms both running;
+  }
+  .texts{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top:1154/@r;
+    height: 342/@r;
+    h2{
+      padding: 40/@r 0;
+      color: #4fddc7;
+      font-size:60/@r;
+      -webkit-transform: translate3d(0, -100%,0);
+      transform: translate3d(0, -100%,0);
+      opacity: 0;
+    }
+    h2.show{
+      animation: fadeInUp 1000ms ease 3200ms both running;
+      -webkit-animation: fadeInUp 1000ms ease 3200ms both running;
+    }
+    img{
+      width: 700/@r;
+      height: 5/@r;
+      -webkit-transform: translate3d(0, -100%,0);
+      transform: translate3d(0, -100%,0);
+      opacity: 0;
+    }
+    img.show{
+      animation: fadeInUp 1000ms ease 3400ms both running;
+      -webkit-animation: fadeInUp 1000ms ease 3400ms both running;
+    }
+    p:nth-of-type(1).show{
+      -webkit-animation: fadeInUp 1000ms ease 4000ms both running;
+      animation: fadeInUp 1000ms ease 4000ms both running;
+    }
+    p:nth-of-type(2).show{
+      -webkit-animation: fadeInUp 1000ms ease 4200ms both running;
+      animation: fadeInUp 1000ms ease 4200ms both running;
+    }
+    p:nth-of-type(3).show{
+      -webkit-animation: fadeInUp 1000ms ease 4400ms both running;
+    }
+    p{
+      -webkit-transform: translate3d(0, -100%,0);
+      transform: translate3d(0, -100%,0);
+      opacity: 0;
+      line-height:80/@r;
+      font-size:50/@r;
+      color: #fff;
+    }
+  }
+}
+.maka-Arrow{
+  position: absolute;
+  bottom: 20px;
+  left:50%;
+  margin-left: -20px;
+  width: 40px;
+  z-index: 111;
+  -webkit-animation-name: arrowing;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mixin1(){
+  .ipad{
+    position: absolute;
+    right: 10/@r;
+    top:-190/@r;
+    width: 577/@r;
+    height: 401/@r;
+    -webkit-transform: translate3d(0, -100%,0);
+    transform: translate3d(0, -100%,0);
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .ipad.show{
+    animation: slideDown 1000ms ease 600ms both running;
+    -webkit-animation: slideDown 1000ms ease 600ms both running;
+  }
+  .Basic{
+    width: 670/@r;
+    height: 126/@r;
+    top:197/@r;
+    position: absolute;
+    background: url("../img/Basic.png") no-repeat 10px 0;
+    background-size: cover;
+    left: -120/@r;
+    -webkit-transform: translate3d(0, -100%,0);
+    transform: translate3d(0, -100%,0);
+    opacity: 0;
+    span{
+      color: #fff;
+      position: absolute;
+      right: 150/@r;
+      line-height:126/@r;
+      font-size:60/@r;
+      letter-spacing:5px;
+    }
+  }
+  .Basic.show{
+    animation: fadeInLeft 1000ms ease 1200ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 1200ms both running;
+  }
+  .PurpleIcon{
+    position: absolute;
+    left: 100/@r;
+    width: 110/@r;
+    height: 120/@r;
+    bottom: 220/@r;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .PurpleIcon.show{
+    animation: fadeInNormal 1000ms ease 600ms both running;
+    -webkit-animation: fadeInNormal 1000ms ease 600ms both running;
+  }
+  .downRed{
+    position: absolute;
+    left: 208/@r;
+    bottom: 100/@r;
+    width: 110/@r;
+    height: 170/@r;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .downRed.show{
+    animation: fadeInNormal 1000ms ease 200ms both running;
+    -webkit-animation: fadeInNormal 1000ms ease 200ms both running;
+  }
+  .redIcon{
+    position: absolute;
+    left: 300/@r;
+    bottom: 120/@r;
+    width: 140/@r;
+    height: 100/@r;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .redIcon.show{
+    animation: fadeInNormal 1000ms ease 400ms both running;
+    -webkit-animation: fadeInNormal 1000ms ease 400ms both running;
+  }
+  .longLine{
+    position: absolute;
+    width: 528/@r;
+    right: 0;
+    height: 2/@r;
+    bottom: 220/@r;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .longLine.show{
+    animation: fadeInLeft 1000ms ease 3800ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+  }
+  .upLine{
+    position: absolute;
+    width: 5/@r;
+    height: 176/@r;
+    right: 100/@r;
+    bottom: 110/@r;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .upLine.show{
+    animation: fadeInDown 1000ms ease 3800ms both running;
+    -webkit-animation: fadeInDown 1000ms ease 3800ms both running;
+  }
+  .About{
+    position: absolute;
+    right: 0;
+    bottom: 136/@r;
+    width: 390/@r;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:60/@r;
+    }
+  }
+  .About.show{
+    animation: fadeInNormal 1000ms ease 4000ms both running;
+    -webkit-animation: fadeInNormal 1000ms ease 4000ms both running;
+  }
+}
+
+#page2{
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+  position: relative;
+  .mixin1();
+  .avatarIcon{
+    width: 232/@r;
+    height: 232/@r;
+    position: absolute;
+    top:450/@r;
+    left: 260/@r;
+    opacity: 0;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .avatarIcon.show{
+    animation: rotateIn 1000ms ease 1800ms both running;
+    -webkit-animation: rotateIn 1000ms ease 1800ms both running;
+  }
+  .yellow{
+    position: absolute;
+    top:410/@r;
+    left: 220/@r;
+    width: 314/@r;
+    height:314/@r;
+    opacity: 0;
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .yellow.show{
+    animation: rotateIn 1000ms ease 1800ms both running;
+    -webkit-animation: rotateIn 1000ms ease 1800ms both running;
+  }
+  .whiteRaduls{
+    position: absolute;
+    top:420/@r;
+    left: 370/@r;
+    width: 154/@r;
+    height: 146/@r;
+    opacity: 0;
+    img{
+      width:100%;
+      height: 100%;
+    }
+  }
+  .whiteRaduls.show{
+    animation: fadeInNormal 1000ms ease 2000ms both running;
+    -webkit-animation: fadeInNormal 1000ms ease 2000ms both running;
+  }
+  .name{
+    position: absolute;
+    width: 495/@r;
+    height: 70/@r;
+    right: 0;
+    top:470/@r;
+    opacity: 0;
+    span{
+      color: #ffffff;
+      font-size:70/@r;
+      letter-spacing:5px;
+    }
+  }
+  .name.show{
+    animation: fadeInNormal 1000ms ease 2600ms both running;
+    -webkit-animation: fadeInNormal 1000ms ease 2600ms both running;
+  }
+  .WhiteLine{
+    width: 338/@r;
+    position: absolute;
+    right: 230/@r;
+    height: 2/@r;
+    top:565/@r;
+    //opacity: 0;
+    opacity: 0;
+    transform: scaleX(0);
+    -webkit-transform: scaleX(0);
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .WhiteLine.show{
+    animation: stretchRight 1000ms ease 2400ms both running;
+    -webkit-animation: stretchRight 1000ms ease 2400ms both running;
+  }
+  .Pinyin{
+    position: absolute;
+    width: 495/@r;
+    height: 70/@r;
+    right: 0;
+    top:580/@r;
+    opacity: 0;
+    span{
+      color: #9f9daf;
+      font-size:50/@r;
+    }
+  }
+  .Pinyin.show{
+    animation: fadeInNormal 1000ms ease 2600ms both running;
+    -webkit-animation: fadeInNormal 1000ms ease 2600ms both running;
+  }
+  .Birth{
+    position: absolute;
+    top:860/@r;
+    left: 200/@r;
+    width: 300/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:50/@r;
+    }
+  }
+  .Birth.show{
+    animation: fadeInDown 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInDown 1000ms ease 3000ms both running;
+  }
+  .BirthVal{
+    position: absolute;
+    top:930/@r;
+    left: 200/@r;
+    width: 400/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .BirthVal.show{
+    animation: fadeInUp 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInUp 1000ms ease 3000ms both running;
+  }
+  .Email{
+    position: absolute;
+    top:860/@r;
+    right: 180/@r;
+    width: 330/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:50/@r;
+    }
+  }
+  .Email.show{
+    animation: fadeInDown 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInDown 1000ms ease 3000ms both running;
+  }
+  .EmailVal{
+    position: absolute;
+    top:930/@r;
+    right: 180/@r;
+    width: 330/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .EmailVal.show{
+    animation: fadeInUp 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInUp 1000ms ease 3000ms both running;
+  }
+  .phone{
+    position: absolute;
+    left: 200/@r;
+    top:1060/@r;
+    width: 300/@r;
+    opacity: 0;
+    height: auto;
+    span{
+      color: #fed97e;
+      font-size:50/@r;
+    }
+  }
+  .phone.show{
+    animation: fadeInDown 1000ms ease 3200ms both running;
+    -webkit-animation: fadeInDown 1000ms ease 3200ms both running;
+  }
+  .phoneVal{
+    position: absolute;
+    left: 200/@r;
+    top:1130/@r;
+    width: 300/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .phoneVal.show{
+    animation: fadeInUp 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInUp 1000ms ease 3000ms both running;
+  }
+  .address{
+    position: absolute;
+    top:1060/@r;
+    right: 180/@r;
+    width: 330/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:50/@r;
+    }
+  }
+  .address.show{
+    animation: fadeInDown 1000ms ease 3200ms both running;
+    -webkit-animation: fadeInDown 1000ms ease 3200ms both running;
+  }
+  .addressVal{
+    position: absolute;
+    top:1130/@r;
+    right: 180/@r;
+    width: 330/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .addressVal.show{
+    animation: fadeInUp 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInUp 1000ms ease 3000ms both running;
+  }
+
+}
+#page3{
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+  .mixin1();
+  .school{
+    position: absolute;
+    top:458/@r;
+    left: 220/@r;
+    width: 610/@r;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0;
+    p{
+      color: #ffffff;
+      // line-height:2;
+      // font-size:50/@r;
+    }
+  }
+  .school.show{
+    animation: fadeInRight 1000ms ease 1800ms both running;
+    -webkit-animation: fadeInRight 1000ms ease 1800ms both running;
+  }
+  .Brief{
+    position: absolute;
+    bottom: 440/@r;
+    left: 220/@r;
+    width: 610/@r;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0;
+    p{
+      color: #ffffff;
+      // line-height:70/@r;
+      // font-size:50/@r;
+    }
+  }
+  .Brief.show{
+    animation: fadeInLeft 1000ms ease 1800ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 1800ms both running;
+  }
+}
+#page4{
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+  .mixin1();
+  .workDown{
+    position: absolute;
+    left: 220/@r;
+    top:450/@r;
+    width: 50/@r;
+    height: 20/@r;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .workDown.show{
+    animation: fadeInNormal 1000ms ease 1800ms both running;
+    -webkit-animation: fadeInNormal 1000ms ease 1800ms both running;
+  }
+  .workLine{
+    position: absolute;
+    left: 244/@r;
+    top:470/@r;
+    width: 4/@r;
+    height: 800/@r;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .workLine.show{
+    animation: pullDown 1000ms ease 2000ms both running;
+    -webkit-animation: pullDown 1000ms ease 2000ms both running;
+  }
+  .Round1{
+    position: absolute;
+    left: 224/@r;
+    top:680/@r;
+    width: 40/@r;
+    height: 40/@r;
+    z-index: 3;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .Round1.show{
+    animation: zoomIn 1000ms ease 3000ms both running;
+    -webkit-animation: zoomIn 1000ms ease 3000ms both running;
+  }
+  .Round2{
+    position: absolute;
+    left: 224/@r;
+    top:890/@r;
+    width: 40/@r;
+    height: 40/@r;
+    z-index: 3;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .Round2.show{
+    animation: zoomIn 1000ms ease 3200ms both running;
+    -webkit-animation: zoomIn 1000ms ease 3200ms both running;
+  }
+  .Round3{
+    position: absolute;
+    left: 224/@r;
+    top:1100/@r;
+    width: 40/@r;
+    height: 40/@r;
+    z-index: 3;
+    opacity: 0;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .Round3.show{
+    animation: zoomIn 1000ms ease 3400ms both running;
+    -webkit-animation: zoomIn 1000ms ease 3400ms both running;
+  }
+  .Round3Val2{
+    position: absolute;
+    left: 300/@r;
+    height: auto;
+    top:686/@r;
+    opacity: 0;
+    span{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .Round3Val2.show{
+    animation: fadeInRight 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInRight 1000ms ease 3000ms both running;
+  }
+  .Round3Val1{
+    position: absolute;
+    left: 300/@r;
+    height: auto;
+    top:626/@r;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:50/@r;
+    }
+  }
+  .Round3Val1.show{
+    animation: fadeInRight 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInRight 1000ms ease 3000ms both running;
+  }
+  .Round1Val2{
+    position: absolute;
+    left: 300/@r;
+    height: auto;
+    top:846/@r;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:50/@r;
+    }
+  }
+  .Round1Val2.show{
+    animation: fadeInRight 1000ms ease 3200ms both running;
+    -webkit-animation: fadeInRight 1000ms ease 3200ms both running;
+  }
+  .Round1Val1{
+    position: absolute;
+    left: 300/@r;
+    height: auto;
+    top:906/@r;
+    opacity: 0;
+    span{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .Round1Val1.show{
+    animation: fadeInRight 1000ms ease 3200ms both running;
+    -webkit-animation: fadeInRight 1000ms ease 3200ms both running;
+  }
+  .Round2Val1{
+    position: absolute;
+    left: 300/@r;
+    height: auto;
+    top:1060/@r;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:50/@r;
+    }
+  }
+  .Round2Val1.show{
+    animation: fadeInRight 1000ms ease 3400ms both running;
+    -webkit-animation: fadeInRight 1000ms ease 3400ms both running;
+  }
+  .Round2Val2{
+    position: absolute;
+    left: 300/@r;
+    height: auto;
+    top:1126/@r;
+    opacity: 0;
+    span{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .Round2Val2.show{
+    animation: fadeInRight 1000ms ease 3400ms both running;
+    -webkit-animation: fadeInRight 1000ms ease 3400ms both running;
+  }
+
+}
+#page5{
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+  .mixin1();
+  .wrapImg{
+    position: absolute;
+    top: 376/@r;
+    left: 50%;
+    width: 630/@r;
+    height:940/@r;
+    margin-left: -315/@r;
+    overflow: hidden;
+    li{
+      width: 630/@r;
+      height:940/@r;
+      float: left;
+      img{
+        height: 100%;
+        width: 100%;
+        display: block;
+        vertical-align: top;
+      }
+    }
+    .num{
+      position: absolute;
+      bottom: 20/@r;
+      z-index: 5;
+      width: 100%;
+      height: 40/@r;
+      text-align: center;
+      span{
+        cursor: pointer;
+        display: inline-block;
+        width: 40/@r;
+        height: 40/@r;
+        background: #000;
+        border: 1px solid #fff;
+        border-radius: 50%;
+      }
+      span.active{
+        border:1px solid #000;
+        background: #fff;
+      }
+    }
+  }
+}
+#page7{
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+  .mixin1();
+  .posts{
+    position: absolute;
+    left: 140/@r;
+    top:418/@r;
+    width: 250/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color:#fed97e;
+      font-size:40/@r;
+    }
+  }
+  .posts.show{
+    animation: fadeInLeft 1000ms ease 1800ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 1800ms both running;
+  }
+  .postsVal{
+    position: absolute;
+    left: 140/@r;
+    top:498/@r;
+    width: 250/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      display: block;
+      color:#fff;
+      font-size:40/@r;
+    }
+  }
+  .postsVal.show{
+    animation: fadeInLeft 1000ms ease 2000ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 2000ms both running;
+  }
+  .expectations{
+    position: absolute;
+    left: 140/@r;
+    top:640/@r;
+    width: 250/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color:#fed97e;
+      font-size:40/@r;
+    }
+  }
+  .expectations.show{
+    animation: fadeInLeft 1000ms ease 2400ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 2400ms both running;
+  }
+  .expectationsVal{
+    position: absolute;
+    left: 140/@r;
+    top:720/@r;
+    width: 250/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .expectationsVal.show{
+    animation: fadeInLeft 1000ms ease 2600ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 2600ms both running;
+  }
+  .mePost{
+    position: absolute;
+    left: 140/@r;
+    top:862/@r;
+    // bottom: 348/@r;
+    width: 250/@r;
+    height: auto;
+    opacity:0;
+    span{
+      color: #fed97e;
+      font-size:40/@r;
+    }
+  }
+  .mePost.show{
+    animation: fadeInLeft 1000ms ease 3000ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 3000ms both running;
+  }
+  .mePostVal{
+    position: absolute;
+    left: 140/@r;
+    top:942/@r;
+    width: 680/@r;
+    height: auto;
+    opacity: 0;
+    p{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .mePostVal.show{
+    animation: fadeInLeft 1000ms ease 3200ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 3200ms both running;
+  }
+  .believe{
+    position: absolute;
+    left: 140/@r;
+    top:1064/@r;
+    // bottom:220/@r;
+    width: 250/@r;
+    height: auto;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:40/@r;
+    }
+  }
+  .believe.show{
+    animation: fadeInLeft 1000ms ease 3600ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 3600ms both running;
+  }
+  .believeVal{
+    position: absolute;
+    left: 140/@r;
+    top:1144/@r;
+    width: 680/@r;
+    height: auto;
+    opacity: 0;
+    p{
+      color: #fff;
+      font-size:40/@r;
+    }
+  }
+  .believeVal.show{
+    animation: fadeInLeft 1000ms ease 3800ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 3800ms both running;
+  }
+  .workIcon{
+    position: absolute;
+    width: 526/@r;
+    right: 40/@r;
+    top:410/@r;
+    height: 440/@r;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .workIcon.show{
+    animation: expandOpen 1000ms ease 1800ms both running;
+    -webkit-animation: expandOpen 1000ms ease 1800ms both running;
+  }
+  .About{
+    position: absolute;
+    right: 0;
+    bottom: 136/@r;
+    width: 450/@r;
+    opacity: 0;
+    span{
+      color: #fed97e;
+      font-size:60/@r;
+    }
+  }
+  .About.show{
+    animation: fadeIn 1000ms ease 4600ms both running;
+    -webkit-animation: fadeIn 1000ms ease 4600ms both running;
+  }
+}
+#page6{
+  width: 100%;
+  height: 100%;
+  background: url("../img/page2_bg.png") no-repeat;
+  .mixin1();
+  .jobVal{
+    position: absolute;
+    top:458/@r;
+    left: 220/@r;
+    width: 670/@r;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0;
+    p{
+      // width: 670/@r;
+      word-wrap:break-word; 
+      color: #ffffff;
+      // line-height:1.5;
+      // line-height:70/@r;
+      // font-size:50/@r;
+    }
+  }
+  .jobVal.show{
+    animation: fadeInLeft 1000ms ease 1800ms both running;
+    -webkit-animation: fadeInLeft 1000ms ease 1800ms both running;
+  }
+  .fouc{
+    position: absolute;
+    bottom: 440/@r;
+    left: 220/@r;
+    width: 610/@r;
+    height: auto;
+    margin: 0 auto;
+    opacity: 0;
+    p{
+      color: #ffffff;
+      // line-height:2;
+      // font-size:50/@r;
+    }
+  }
+  .fouc.show{
+    animation: fadeInRight 1000ms ease 1800ms both running;
+    -webkit-animation: fadeInRight 1000ms ease 1800ms both running;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
